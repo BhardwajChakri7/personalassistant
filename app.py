@@ -98,15 +98,15 @@ If the user asks to Give Image as output Please tell him to use our MultiModal A
 """
 
 # Initialize Streamlit app
-st.set_page_config(page_title="MultiModal and Multi-Domain Chat Bot")
+st.set_page_config(page_title="Personal Assistant")
 
 # Sidebar Features
-st.sidebar.title("Chat Bot Features")
+st.sidebar.title("Chat bot Features")
 
 # Help Section
 st.sidebar.subheader("Help")
 st.sidebar.markdown(
-    "Welcome to the Chat Bot app! You can ask questions or use MultiModal to analyze images."
+    "Welcome to the Chat Bot app! You can ask questions or use Personal Assistant to analyze images."
 )
 
 # About Section
@@ -131,7 +131,7 @@ use_multimodal = st.checkbox("Use MultiModal (For Images)")
 
 # Display MultiModal functionality if checkbox is selected
 if use_multimodal:
-    st.header("MultiModal Chat Bot")
+    st.header("Personal Chat Bot")
 
     # Instructions for MultiModal
     st.markdown(
@@ -171,7 +171,7 @@ if use_multimodal:
 
 # Display Multi-Domain Chat Bot functionality if checkbox is not selected
 else:
-    st.header("Multi-Domain Chat Bot")
+    st.header("Personal Chat Bot")
 
     # Instructions for Multi-Domain
     st.markdown(
@@ -212,15 +212,3 @@ else:
         st.write(df.tail(50).iloc[::-1])
     else:
         st.info("No question history available.")
-
-# Copyright information
-st.markdown(
-    """
-    ---
-    All rights reserved © 2024 M SANJAY KUMAR REDDY
-
-    Mobile: +91 7601003069
-
-    Email: sanjaykumarreddymanyam@gmail.com
-    """
-)
