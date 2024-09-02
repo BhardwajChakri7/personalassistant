@@ -64,7 +64,7 @@ def gemini_pro(input_text, prompt):
 # Function for MultiModal chat using Google Gemini Pro Vision API
 def geminiprovision(image, custom_prompt):
     try:
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         response = model.generate_content([image[0], custom_prompt])
         return response.text
     except Exception as e:
